@@ -1,11 +1,371 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
     </head>
 <body>
+ -->
 
-<h1>Bonjour Je suis Mm Matallah</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - BTS SIO</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.card {
+  background: #eee;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Mon Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="#presentation">Présentation</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#stages">Stages</a></li>
+      <li><a href="#situations">Situations pro</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PRESENTATION -->
+<section id="presentation">
+  <h2>Ma présentation</h2>
+  <p><b>Nom :</b> Ton Nom</p>
+  <p><b>Prénom :</b> Ton Prénom</p>
+  <p><b>Âge :</b> Ton âge</p>
+
+  <h3>Parcours</h3>
+  <p>Bac ..., puis BTS SIO option SLAM / SISR.</p>
+
+  <h3>Objectif</h3>
+  <p>Devenir développeur / administrateur réseau.</p>
+</section>
+
+<!-- CV -->
+<section id="cv">
+  <h2>Mon CV</h2>
+
+  <iframe src="assets/cv.pdf" width="100%" height="500px"></iframe>
+
+  <br><br>
+  <a href="assets/cv.pdf" download>Télécharger mon CV</a>
+</section>
+
+<!-- PROJETS -->
+<section id="projets">
+  <h2>Projets académiques</h2>
+
+  <div class="card">
+    <h3>Projet 1 - Site web</h3>
+    <p><b>Contexte :</b> Projet BTS</p>
+    <p><b>Technologies :</b> HTML, CSS, JS</p>
+    <p><b>Compétences :</b> Développement web</p>
+  </div>
+
+  <div class="card">
+    <h3>Projet 2 - Application</h3>
+    <p><b>Contexte :</b> Projet scolaire</p>
+    <p><b>Technologies :</b> PHP, MySQL</p>
+    <p><b>Compétences :</b> Backend</p>
+  </div>
+
+</section>
+
+<!-- STAGES -->
+<section id="stages">
+  <h2>Stages</h2>
+
+  <div class="card">
+    <h3>Entreprise X</h3>
+    <p><b>Période :</b> 2025</p>
+    <p><b>Missions :</b> Développement, maintenance</p>
+    <p><b>Compétences :</b> Gestion projet</p>
+  </div>
+
+</section>
+
+<!-- SITUATIONS -->
+<section id="situations">
+  <h2>Situations professionnelles (E5)</h2>
+
+  <div class="card">
+    <h3>Situation 1</h3>
+    <p><b>Contexte :</b> Stage</p>
+    <p><b>Problème :</b> ...</p>
+    <p><b>Solution :</b> ...</p>
+    <p><b>Compétences :</b> ...</p>
+  </div>
+
+  <div class="card">
+    <h3>Situation 2</h3>
+    <p><b>Contexte :</b> Projet</p>
+    <p><b>Problème :</b> ...</p>
+    <p><b>Solution :</b> ...</p>
+    <p><b>Compétences :</b> ...</p>
+  </div>
+
+</section>
+
+<!-- VEILLE -->
+<section id="veille">
+  <h2>Veille technologique</h2>
+
+  <div class="card">
+    <h3>Sujet 1 : IA</h3>
+    <p>Articles, outils, évolution…</p>
+  </div>
+
+  <div class="card">
+    <h3>Sujet 2 : Cybersécurité</h3>
+    <p>Actualités, vulnérabilités…</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Me contacter</h2>
+
+  <form>
+    <input type="text" placeholder="Nom" required><br><br>
+    <input type="email" placeholder="Email" required><br><br>
+    <textarea placeholder="Message"></textarea><br><br>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <p>GitHub : ton lien</p>
+  <p>LinkedIn : ton lien</p>
+</section>
+
+<footer>
+  <p>© 2026 Portfolio BTS SIO</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
     </body>
