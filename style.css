@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fef6f9;
+}
+
+/* HEADER */
+header {
+  background: #a8d8ea;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff8fab;
+}
+
+/* CONTENU */
+main {
+  padding: 30px;
+}
+
+section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* TITRES */
+h2 {
+  color: #ff8fab;
+}
+
+/* CARTES */
+.card {
+  background: #ffe5ec;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* BOUTONS */
+button, a.btn {
+  background: #ff8fab;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff5d8f;
+}
+
+/* FORMULAIRE */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #a8d8ea;
+  margin-top: 30px;
+}
