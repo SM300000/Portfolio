@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Situations</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<?php require(menu.php) ?>
+
+<main>
+<section>
+  <h2>Situations professionnelles</h2>
+
+  <div class="card">
+    <h3>Situation 1</h3>
+    <p>Contexte : ...</p>
+    <p>Solution : ...</p>
+  </div>
+
+</section>
+</main>
+
+</body>
+</html>

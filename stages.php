@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stages</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<?php require(menu.php) ?>
+
+<main>
+<section>
+  <h2>Stages</h2>
+
+  <div class="card">
+    <h3>Entreprise X</h3>
+    <p>Période : ...</p>
+    <p>Missions : ...</p>
+  </div>
+
+</section>
+</main>
+
+</body>
+</html>
