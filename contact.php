@@ -27,7 +27,7 @@
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit"> <a href="https://smatallah-lehv.vercel.app/remerciements.php">Sauvegarder</a></button>
+  <button type="submit">sauvegarder</button>
 </form>
 
 </section>
