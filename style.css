@@ -106,8 +106,8 @@ section {
 
 /* PDF */
 iframe {
-  width: 59%;        /* largeur raisonnable */
-  max-width: 531px;  /* limite pour éviter qu'il devienne trop large */
+  width: 58%;        /* largeur raisonnable */
+  max-width: 530px;  /* limite pour éviter qu'il devienne trop large */
   height: 80vh;      /* hauteur confortable sans full screen */
   border: 1px solid #ccc;
   border-radius: 10px;
