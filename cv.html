@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>CV</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Mon Portfolio</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="presentation.html">Présentation</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="stages.html">Stages</a></li>
-      <li><a href="situations.html">Situations</a></li>
-      <li><a href="veille.html">Veille</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="stages.html">Stages</a></li>
+            <li><a href="situations.html">Situations</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
 
-<main>
-<section>
-  <h2>Mon CV</h2>
+    <main>
 
 <a href="CV_SanaaMATALLAH.pdf" download className="btn-cta hover-lift block text-center">
                 <span className="text-white font-semibold">Télécharger le CV (PDF)</span>
               </a>
   <br><br>
+        <section class="cv-container">
 
-<a class="btn" href="CV_SanaaMATALLAH.pdf" target="_blank">
-  Ouvrir en plein écran
-</a>
-</section>
-</main>
+
+            <h2>Mon CV</h2>
+
+            <!-- APERÇU PDF -->
+            <iframe src="CV_SanaaMATALLAH.pdf#toolbar=0&navpanes=0&scrollbar=0" ></iframe>
+<br>
+            <!-- BOUTON -->
+            <a class="btn" href="CV_SanaaMATALLAH.pdf" download>
+                Télécharger le CV
+            </a>
+            
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>

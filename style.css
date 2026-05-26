@@ -42,7 +42,7 @@ section {
   background: #ffffff;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* TITRES */
@@ -59,7 +59,8 @@ h2 {
 }
 
 /* BOUTONS */
-button, a.btn {
+button,
+a.btn {
   background: #ff8fab;
   color: white;
   padding: 10px 15px;
@@ -74,7 +75,8 @@ button:hover {
 }
 
 /* FORMULAIRE */
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -100,4 +102,15 @@ footer {
 section {
   max-width: 900px;
   margin: auto;
+}
+
+/* PDF */
+iframe {
+  width: 57%;        /* largeur raisonnable */
+  max-width: 529px;  /* limite pour éviter qu'il devienne trop large */
+  height: 80vh;      /* hauteur confortable sans full screen */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: block;    /* nécessaire pour centrer */
+  /* margin: 0 auto;    centre l’iframe */
 }
