@@ -1,71 +1,87 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Projets</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="stages.html">Stages</a></li>
-        <li><a href="situations.html">Situations</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<div class="logo">Sanaa.</div>
+</header>
 
-  <main>
-    <section>
-      <h2>Projets académiques</h2>
+<section class="page">
+<h2 class="section-title">Mes projets</h2>
 
-      <div class="card">
-        <h3>Projet 1 - Java</h3>
-        <p>Technologies: Android studio, Java, BD emportée</p>
-        <p>Compétences : développement android</p>
+<div class="cards">
 
-        <!-- BOUTON -->
-        <a class="btn" href="code_ProjetJava.pdf" download>
-          Télécharger le code
-      </a>
+<div class="card">
+<h3>Projet Java</h3>
+<p>
+Développement d’une application Java permettant
+la gestion des utilisateurs.
+</p>
+<br>
+<a href="#" class="btn">Voir le projet</a>
+</div>
 
-      </div>
+<div class="card">
+<h3>Projet PHP</h3>
+<p>
+Création d’un site dynamique avec PHP et MySQL.
+</p>
+<br>
+<a href="#" class="btn">Voir le projet</a>
+</div>
 
-      <div class="card">
-        <h3>Projet 2 - PHP</h3>
-        <p>Technologies : PHPmyAdmin, HTML, MySQL</p>
-        <p>Compétences : développement web</p>
+<div class="card">
+<h3>Projet Portfolio</h3>
+<p>
+Conception d’un portfolio responsive moderne.
+</p>
+<br>
+<a href="#" class="btn">Voir le projet</a>
+</div>
 
-<!-- BOUTON -->
-<a class="btn" href="code_ProjetPHP.pdf" download>
-  Télécharger le code
-</a>
+<div class="card">
+<h3>Application de gestion</h3>
+<p>
+Développement d’une application de gestion d’utilisateurs
+et de bases de données.
+</p>
+<br>
+<a href="#" class="btn">Voir le projet</a>
+</div>
 
-<!-- BOUTON -->
-<a class="btn" href="Projet_API_2.zip" download>
-  Télécharger le projet
-</a>
+</div>
+</section>
 
-<!-- BOUTON -->
-<a class="btn" href="gsb.sql" download>
-  Télécharger la base de données
-</a>
+<script>
 
-      </div>
-
-    </section>
-  </main>
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = '0.6s';
+  });
+  
+  window.addEventListener('scroll', () => {
+  
+      cards.forEach(card => {
+  
+          const top = card.getBoundingClientRect().top;
+  
+          if(top < window.innerHeight - 50){
+              card.style.opacity = 1;
+              card.style.transform = 'translateY(0px)';
+          }
+      });
+  });
+  
+  </script>
 
 </body>
-
 </html>

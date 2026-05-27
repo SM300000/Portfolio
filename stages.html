@@ -1,43 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Stages</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stages</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="stages.html">Stages</a></li>
-        <li><a href="situations.html">Situations</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<div class="logo">Sanaa.</div>
+</header>
 
-  <main>
-    <section>
-      <h2>Stages</h2>
+<section class="page">
+<h2 class="section-title">Mes stages</h2>
 
-      <div class="card">
-        <h3>Entreprise X</h3>
-        <p>Période : ...</p>
-        <p>Missions : ...</p>
-      </div>
+<div class="cards">
 
-    </section>
-  </main>
+<div class="card">
+<h3>Stage 1</h3>
+<p>
+Maintenance informatique, développement web,
+création de bases de données et assistance utilisateur.
+</p>
+</div>
+
+<div class="card">
+<h3>Stage 2</h3>
+<p>
+Participation à différents projets informatiques,
+correction de bugs et développement d’interfaces.
+</p>
+</div>
+
+</div>
+</section>
+
+<script>
+
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = '0.6s';
+  });
+  
+  window.addEventListener('scroll', () => {
+  
+      cards.forEach(card => {
+  
+          const top = card.getBoundingClientRect().top;
+  
+          if(top < window.innerHeight - 50){
+              card.style.opacity = 1;
+              card.style.transform = 'translateY(0px)';
+          }
+      });
+  });
+  
+  </script>
 
 </body>
-
 </html>
