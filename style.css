@@ -125,3 +125,6 @@ th, td {
   border: 1px solid black; /* bordures des cellules */
   padding: 10px;
 }
+.fluo {
+  background-color: yellow;
+}
