@@ -114,3 +114,14 @@ iframe {
   display: block;    /* nécessaire pour centrer */
   /* margin: 0 auto;    centre l’iframe */
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black; /* bordure extérieure */
+}
+
+th, td {
+  border: 1px solid black; /* bordures des cellules */
+  padding: 10px;
+}
